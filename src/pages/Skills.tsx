@@ -22,7 +22,7 @@ const technologiesWorkedWith = ["HTML", "CSS", "JavaScript", "React", "Node.js",
 const Skills = () => {
   return (
     <>
-      <div>
+      <div className="skills" id="skills">
         <h1 className="flex justify-center text-4xl font-bold mt-[10vw]">
           <span className="border-b-3 border-blue-500">Skills</span>
         </h1>

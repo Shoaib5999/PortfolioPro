@@ -7,37 +7,37 @@ const Projects = () => {
       id: 1,
       title: "E-Commerce Platform",
       description: "A full-featured e-commerce platform with product listings, cart functionality, and secure checkout.",
-      image: "https://via.placeholder.com/600x400",
+      image: "https://thumbs2.imgbox.com/30/a8/4L7DWcXU_t.png",
       tags: ["React", "TypeScript", "Node.js", "MongoDB"],
-      github: "https://github.com/",
-      demo: "https://example.com/",
+      github: "https://github.com/Shoaib5999/Ecommerce-fullStackApp-MERN-",
+      demo: "https://github.com/Shoaib5999/Ecommerce-fullStackApp-MERN-",
     },
-    {
-      id: 2,
-      title: "Task Management App",
-      description: "A productivity app that helps users organize tasks, set priorities, and track progress.",
-      image: "https://via.placeholder.com/600x400",
-      tags: ["React", "Redux", "Firebase"],
-      github: "https://github.com/",
-      demo: "https://example.com/",
-    },
+    // {
+    //   id: 2,
+    //   title: "Task Management App",
+    //   description: "A productivity app that helps users organize tasks, set priorities, and track progress.",
+    //   image: "https://via.placeholder.com/600x400",
+    //   tags: ["React", "Redux", "Firebase"],
+    //   github: "https://github.com/",
+    //   demo: "https://example.com/",
+    // },
     {
       id: 3,
       title: "Weather Dashboard",
       description: "A weather application that provides real-time weather data and forecasts for locations worldwide.",
-      image: "https://via.placeholder.com/600x400",
+      image: "http://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/9653016/120785_678635.png",
       tags: ["React", "API Integration", "Tailwind CSS"],
-      github: "https://github.com/",
-      demo: "https://example.com/",
+      github: "https://github.com/Shoaib5999/",
+      demo: "https://github.com/Shoaib5999/",
     },
     {
       id: 4,
       title: "Portfolio Website",
       description: "A responsive portfolio website showcasing skills, projects, and professional experience.",
-      image: "https://via.placeholder.com/600x400",
+      image: "https://thumbs2.imgbox.com/82/9b/MTynCcTd_t.png",
       tags: ["React", "TypeScript", "Tailwind CSS"],
-      github: "https://github.com/",
-      demo: "https://example.com/",
+      github: "https://github.com/Shoaib5999/",
+      demo: "https://github.com/Shoaib5999/",
     },
   ];
 
@@ -109,7 +109,7 @@ const Projects = () => {
 
         {/* View More Button */}
         <div className="text-center mt-12">
-          <Button variant="contained" size="large" href="https://github.com/" target="_blank" rel="noopener noreferrer" sx={{ backgroundColor: "#1976d2", "&:hover": { backgroundColor: "#1565c0" } }}>
+          <Button variant="contained" size="large" href="https://github.com/Shoaib5999/" target="_blank" rel="noopener noreferrer" sx={{ backgroundColor: "#1976d2", "&:hover": { backgroundColor: "#1565c0" } }}>
             View More Projects on GitHub
           </Button>
         </div>

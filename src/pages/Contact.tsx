@@ -1,32 +1,46 @@
 import { Form, Input, Button, message } from "antd";
 import { Send as SendIcon, LocationOn as EnvironmentIcon, Phone as PhoneIcon, Mail as MailIcon } from "@mui/icons-material";
 import React from "react";
+import { database } from "../firebase/firebase";
+import { collection, addDoc } from "firebase/firestore";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import GitHubIcon from "@mui/icons-material/GitHub";
 const { TextArea } = Input;
-
 const Contact = () => {
   const [form] = Form.useForm();
 
   const onFinish = (values) => {
     console.log("Form values:", values);
-    message.success("Message sent successfully! I will get back to you soon.");
+    saveToFirebase(values);
     form.resetFields();
+  };
+  const saveToFirebase = async (values) => {
+    try {
+      const docRef = await addDoc(collection(database, "contact"), {
+        ...values,
+      });
+      message.success(`Message sent successfully! ${values.name}, I will get back to you soon`);
+    } catch (err) {
+      console.log("Error in saving to firebase", err);
+      message.error("Error in saving to firebase");
+    }
   };
 
   const contactInfo = [
     {
       icon: <EnvironmentIcon className="text-2xl text-blue-500" />,
       title: "Location",
-      details: "Your City, Country",
+      details: "Mumbai, India",
     },
     {
       icon: <PhoneIcon className="text-2xl text-blue-500" />,
       title: "Phone",
-      details: "+1 (123) 456-7890",
+      details: "+91 706189****",
     },
     {
       icon: <MailIcon className="text-2xl text-blue-500" />,
       title: "Email",
-      details: "contact@example.com",
+      details: "shoaibakramdev12@gmail.com",
     },
   ];
 
@@ -96,23 +110,11 @@ const Contact = () => {
             <div className="mt-8">
               <h4 className="font-semibold mb-4">Follow Me</h4>
               <div className="flex space-x-4">
-                <a
-                  href="https://github.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-10 h-10 rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center text-gray-700 dark:text-gray-300 hover:bg-blue-500 hover:text-white transition-colors"
-                  aria-label="GitHub"
-                >
-                  <i className="fab fa-github"></i>
+                <a href="https://github.com/Shoaib5999/" target="_blank">
+                  <GitHubIcon className="hover:text-[rgb(0,113,243)] hover:cursor-pointer mr-3" />
                 </a>
-                <a
-                  href="https://linkedin.com/in/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-10 h-10 rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center text-gray-700 dark:text-gray-300 hover:bg-blue-500 hover:text-white transition-colors"
-                  aria-label="LinkedIn"
-                >
-                  <i className="fab fa-linkedin-in"></i>
+                <a href="https://www.instagram.com/shoaib.akramm" target="_blank">
+                  <InstagramIcon className="mr-3 hover:text-[rgb(0,113,243)] hover:cursor-pointer" />
                 </a>
                 <a
                   href="https://twitter.com/"

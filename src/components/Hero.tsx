@@ -3,13 +3,13 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import Card from "./Card";
+export const handleScrollToSection = ({ section }) => {
+  const contactSection = document.getElementById(section);
+  if (contactSection) {
+    contactSection.scrollIntoView({ behavior: "smooth" });
+  }
+};
 const Hero = () => {
-  const handleScrollToSection = ({ section }) => {
-    const contactSection = document.getElementById(section);
-    if (contactSection) {
-      contactSection.scrollIntoView({ behavior: "smooth" });
-    }
-  };
   return (
     <>
       <div className="bg-[rgb(245,252,247)] flex flex-col p-3 md:p-10 bg-gradient-to-r from-blue-100 to-white min-h-screen">
@@ -46,8 +46,12 @@ const Hero = () => {
           </button>
         </div>
         <div className="p-5 pt-5 text-gray-500 ">
-          <GitHubIcon className="hover:text-[rgb(0,113,243)] hover:cursor-pointer mr-3" />
-          <InstagramIcon className="mr-3 hover:text-[rgb(0,113,243)] hover:cursor-pointer" />
+          <a href="https://github.com/Shoaib5999/" target="_blank">
+            <GitHubIcon className="hover:text-[rgb(0,113,243)] hover:cursor-pointer mr-3" />
+          </a>
+          <a href="https://www.instagram.com/shoaib.akramm" target="_blank">
+            <InstagramIcon className="mr-3 hover:text-[rgb(0,113,243)] hover:cursor-pointer" />
+          </a>
         </div>
       </div>
     </>

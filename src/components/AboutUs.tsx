@@ -3,12 +3,20 @@ import React from "react";
 const AboutUs = () => {
   return (
     <>
-      <div>
+      <div id="aboutUs">
         <h1 className="flex justify-center text-4xl font-bold mt-[10vw]">
           <span className="border-b-3 border-blue-500">About Me</span>
         </h1>
         <div className="flex mt-10">
-          <div className=" hidden md:block md:w-1/2 ">profile image</div>
+          <div className="hidden md:flex md:w-1/2 md:h-dvh items-center justify-center flex-col">
+            <img
+              className="max-w-lg h-auto"
+              src="https://scontent.fbom3-3.fna.fbcdn.net/v/t39.30808-6/475996123_1050919760411390_4493340867637215616_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=ofquOYsbf3kQ7kNvgFCxOiW&_nc_oc=AdiLWF5gOFcKa3llXKlQTtSYvD033WZQsyf1XC8UxCxDby38GjO_k_RG54zcqvOTVX8lAqWJUHs6lBeibWPlYX0y&_nc_zt=23&_nc_ht=scontent.fbom3-3.fna&_nc_gid=utk4bm6VYYrt13-WBF3AlA&oh=00_AYG_PDoK7BPthPcVVOtYCtQRT8aAto6saNeleD3xpLmqbw&oe=67DB97C3"
+              alt="Centered Image"
+            />
+            <span>Profile Picture</span>
+          </div>
+
           <div className="md:w-1/2  p-5">
             <h1 className="sm:text-2xl text-xl font-bold p-5 sm:pr-11">
               Frontend Software Engineer in <span className="text-blue-500">Mumbai</span>
@@ -22,7 +30,7 @@ const AboutUs = () => {
               the forefront of web development trends.
             </div>
             <div className="  flex   p-4">
-              <div className="grid grid-cols-2 gap-4 max-w-md w-full bg-white p-6 rounded-lg shadow-md">
+              <div className="grid grid-cols-2 gap-4 max-w-lg w-full bg-white p-6 rounded-lg shadow-md">
                 <div>
                   <p className="text-gray-600 font-medium">Name:</p>
                   <p className="text-gray-900">Shoaib Akram</p>

@@ -45,18 +45,18 @@ const Contact = () => {
   ];
 
   return (
-    <section id="contact" className="py-20 bg-gray-50 dark:bg-gray-800">
+    <section id="contact" className="py-20 bg-gray-50 ">
       <div className="container mx-auto px-4">
         {/* Section Heading */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Get In Touch</h2>
           <div className="h-1 w-20 bg-blue-500 mx-auto"></div>
-          <p className="mt-6 text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">Feel free to reach out if you want to collaborate on a project, have a question, or just want to connect.</p>
+          <p className="mt-6 text-gray-600  max-w-2xl mx-auto">Feel free to reach out if you want to collaborate on a project, have a question, or just want to connect.</p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Contact Form */}
-          <div className="bg-white dark:bg-gray-900 rounded-lg shadow-md p-8">
+          <div className="bg-white rounded-lg shadow-md p-8">
             <h3 className="text-2xl font-bold mb-6">Send Me a Message</h3>
             <Form form={form} layout="vertical" onFinish={onFinish} autoComplete="off">
               <Form.Item name="name" label="Name" rules={[{ required: true, message: "Please enter your name" }]}>
@@ -93,7 +93,7 @@ const Contact = () => {
           {/* Contact Information */}
           <div className="flex flex-col space-y-8">
             <h3 className="text-2xl font-bold mb-2">Contact Information</h3>
-            <p className="text-gray-600 dark:text-gray-400">Don't hesitate to reach out. I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+            <p className="text-gray-600">Don't hesitate to reach out. I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
 
             <div className="space-y-6 mt-6">
               {contactInfo.map((info, index) => (
@@ -101,7 +101,7 @@ const Contact = () => {
                   <div className="mt-1">{info.icon}</div>
                   <div>
                     <h4 className="font-semibold">{info.title}</h4>
-                    <p className="text-gray-600 dark:text-gray-400">{info.details}</p>
+                    <p className="text-gray-600">{info.details}</p>
                   </div>
                 </div>
               ))}
@@ -120,7 +120,7 @@ const Contact = () => {
                   href="https://twitter.com/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-10 h-10 rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center text-gray-700 dark:text-gray-300 hover:bg-blue-500 hover:text-white transition-colors"
+                  className="w-10 h-10 rounded-full bg-gray-200 flex items-center justify-center text-gray-700 hover:bg-blue-500 hover:text-white transition-colors"
                   aria-label="Twitter"
                 >
                   <i className="fab fa-twitter"></i>

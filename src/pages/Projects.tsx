@@ -42,7 +42,7 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="py-20 bg-gray-100 dark:bg-gray-900">
+    <section id="projects" className="py-20 bg-gray-100 ">
       <div className="container mx-auto px-4">
         {/* Section Heading */}
         <div className="text-center mb-16">
@@ -50,7 +50,7 @@ const Projects = () => {
             My Projects
           </Typography>
           <div className="h-1 sm:w-60 bg-blue-500 mx-auto mb-9"></div>
-          <Typography variant="body1" className="mt-6 text-gray-600 dark:text-gray-400 max-w-dvw mx-auto">
+          <Typography variant="body1" className="mt-6 text-gray-600  max-w-dvw mx-auto">
             Here are some of the projects I've worked on. Each project reflects my skills and experience in frontend development.
           </Typography>
         </div>
@@ -85,7 +85,7 @@ const Projects = () => {
                   <Typography variant="h5" className="font-bold mb-2">
                     {project.title}
                   </Typography>
-                  <Typography variant="body2" className="text-gray-600 dark:text-gray-400 mb-4">
+                  <Typography variant="body2" className="text-gray-600 mb-4">
                     {project.description}
                   </Typography>
                   <div className="flex flex-wrap gap-2 mb-4">

@@ -26,9 +26,7 @@ const Hero = () => {
                 <h1 className="font-bold text-3xl mt-5 mb-5 md:text-5xl ">
                   Hi, I'm <span className="text-[rgb(0,112,243)]">Shoaib Akram</span>
                 </h1>
-                <p className="text-lg md:text-xl text-gray-600 dark:text-gray-400 max-w-xl">
-                  I build exceptional and accessible digital experiences for the web and apps . Focused on creating clean, user-friendly interfaces with modern technologies.
-                </p>
+                <p className="text-lg md:text-xl text-gray-600 max-w-xl">I build exceptional and accessible digital experiences for the web and apps . Focused on creating clean, user-friendly interfaces with modern technologies.</p>
               </div>
             </div>
             <div className="hidden md:block   md:w-1/2">

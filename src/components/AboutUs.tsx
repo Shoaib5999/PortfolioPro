@@ -29,7 +29,7 @@ const AboutUs = () => {
               My journey in web development began several years ago, and since then, I've worked on various projects ranging from small business websites to complex web applications. I'm constantly learning and adapting to new technologies to stay at
               the forefront of web development trends.
             </div>
-            <div className="  flex   p-4">
+            <div className="  flex   p-4 flex-wrap overflow-hidden">
               <div className="grid grid-cols-2 gap-4 max-w-lg w-full bg-white p-6 rounded-lg shadow-md">
                 <div>
                   <p className="text-gray-600 font-medium">Name:</p>
